@@ -1,0 +1,30 @@
+.simplebar-container {
+  background-color: #e5e5e5;
+  max-width: 300px;
+  padding: 30px;
+}
+
+.simplebar {
+  height: 240px;
+  padding-right: 20px;
+}
+
+.simplebar__item {
+  min-height: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.simplebar .simplebar-track.simplebar-vertical {
+  background-color: #000;
+  width: 2px;
+  right: 0;
+  height: 220px;
+  top: 2px;
+}
+
+.simplebar .simplebar-scrollbar {
+  width: 2px;
+  background-color: #fff;
+}
+
