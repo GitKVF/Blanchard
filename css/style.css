@@ -979,29 +979,30 @@ input:focus:-ms-input-placeholder      {opacity: 0; -ms-transition: opacity 0.3s
 
 .gallery__swiper-button::before {
   content: '';
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0;
   background-color: rgba(194, 131, 243, 0.4);
+  transition: opacity .3s ease;
 }
 
 .gallery__swiper-button::after {
   content: '';
-  display: none;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
   background-image: url(../img/loupe.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 25%;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 85%;
-  height: 85%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 7%;
+  opacity: 0;
+  transition: opacity .5s ease;
 }
 
 .gallery__swiper-button:focus {
@@ -1010,11 +1011,11 @@ input:focus:-ms-input-placeholder      {opacity: 0; -ms-transition: opacity 0.3s
 }
 
 .gallery__swiper-button:hover::after {
-  display: block;
+  opacity: 1;
 }
 
 .gallery__swiper-button:active::before {
-  display: block;
+  opacity: 1;
 }
 
 .swiper-button-next,
@@ -1075,8 +1076,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; -ms-transition: opacity 0.3s
 }
 
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-  opacity: 1;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  opacity: .5;
 }
 
 .swiper-button-next.swiper-button-disabled::after, .swiper-button-prev.swiper-button-disabled::after {
@@ -2073,7 +2073,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; -ms-transition: opacity 0.3s
   }
 
   .header__top{
-    width: 64%;
+    width: 61%;
   }
 
   .logo__img {
@@ -2789,7 +2789,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; -ms-transition: opacity 0.3s
   }
 
   .header__top {
-    width: 70%;
+    width: 60%;
   }
 
   .header__top-content {
@@ -3276,7 +3276,11 @@ input:focus:-ms-input-placeholder      {opacity: 0; -ms-transition: opacity 0.3s
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 450px) {
+
+  .header__top {
+    width: 60%;
+  }
 
   .about__container {
     padding-top: 96px;

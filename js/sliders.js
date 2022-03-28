@@ -94,8 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
     spaceBetween: 30,
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.partners__button-next',
+      prevEl: '.partners__button-prev',
     },
 
     breakpoints:{
